@@ -5,7 +5,7 @@ total 36 keys decoded, few of them are encoded as RC5X, and two more special key
 
 Raw timing and manually decoding
 ```
-2	Raw (12): 900 -900 900 -850 900 -850 1800 -1750 1800 -850 900 DIGITAL 1
+2 Raw (12): 900 -900 900 -850 900 -850 1800 -1750 1800 -850 900 DIGITAL 1
 3 Raw (10): 900 -900 1750 -1750 1800 -1750 1800 -850 900 DIGITAL 2
 
 ```
