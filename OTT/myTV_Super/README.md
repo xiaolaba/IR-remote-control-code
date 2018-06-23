@@ -1,8 +1,8 @@
 
-OEM product, no sample on hand
-product photo captured from internet
+OEM product, no sample on hand  
+product photo captured from internet  
 
-IR remote control code and table
+IR remote control code and table  
 
 ![OTT_myTV_Super_IR_remote.JPG](OTT_myTV_Super_IR_remote.JPG)
 
