@@ -86,4 +86,4 @@ seq	Protocol	RAW_CODE	T	ADDRESS	COMMAND	bits	key
 ```
 
 
-![IR-remote-control-Marantz RC-DA17CD](neo_xiaolaba_IR-remote-control-Marantz RC-DA17CD.jpg)
+![IR-remote-control-Marantz RC-DA17CD](neo_xiaolaba_IR-remote-control-Marantz_RC-DA17CD.jpg)
