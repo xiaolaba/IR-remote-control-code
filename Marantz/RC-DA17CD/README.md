@@ -9,20 +9,22 @@ Raw timing and manually decoding
 3 Raw (10): 900 -900 1750 -1750 1800 -1750 1800 -850 900 DIGITAL 2
 
 ```
-positive as M
-Negative as S
-900 as one unit, 900 = M, -850 = S, idle is also = S
-MS or SM as one bit encoding, total about 1800
-MS = bit 0
-SM = bit 1
-or inverted as you want
-decoded stream is something like this
+positive as M  
+Negative as S  
+900 as one unit, 900 = M, -850 = S, idle is also = S  
+MS or SM as one bit encoding, total about 1800  
+MS = bit 0  
+SM = bit 1  
+or inverted as you want  
+decoded stream is something like this  
+
 ```
 2	Raw (12): (idle 900) (-900 900) (-850 900) (-850 1800) -1750 1800 -850 900 DIGITAL 1
 2	Raw (12): (idle 900) (-900 900) (-850 900) (-850 900) (900 -850) (-850 900) (900 -850) (900 idle) DIGITAL 1
              SM         SM         SM         SM         SM         SM         MS         MS
              1          1          1          1          1          1          0          0
              S1         S2         T          command 0b 0b-11100
+             
 ```
 
 ```
@@ -31,6 +33,7 @@ decoded stream is something like this
              SM         SM         MS         SM         MS         SM         MS         MS
              1          1          0          1          0          1          0          0
              S1         S2         T          command 0b-10100
+             
 ```
 
 this is possible 8 bit schema but RC5 timing or encoding
