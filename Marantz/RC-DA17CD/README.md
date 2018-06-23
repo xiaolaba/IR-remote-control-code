@@ -1,9 +1,8 @@
 
-![IR decoded signal](IR-code.txt)
+IR remote of Hi-END CD player Marantz CD Player CD-17mkiii
 
-total 36 keys decoded, few of them are encoded as RC5X, and two more special keys are
+Total 36 keys encoded, ![Marantz RC-DA17CD IR remote control codes](IR-code.txt), few of them are encoded as RC5X, and two more special keys are there, raw timing and manually decoding
 
-Raw timing and manually decoding
 ```
 2 Raw (12): 900 -900 900 -850 900 -850 1800 -1750 1800 -850 900 DIGITAL 1
 3 Raw (10): 900 -900 1750 -1750 1800 -1750 1800 -850 900 DIGITAL 2
