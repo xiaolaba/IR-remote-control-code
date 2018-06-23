@@ -2,7 +2,8 @@
 IR remote of Hi-END CD player, Marantz CD Player CD-17mkiii  
 ![Marantz CD Player CD-17mkiii](https://xiaolaba.files.wordpress.com/2018/04/xiaolaba_audiolab_8000s_remote.jpg)
 
-Total 36 keys encoded, ![Marantz RC-DA17CD IR remote control codes](IR-code.txt), few of them are encoded as RC5X, and two more special keys are there, raw timing and manually decoding
+Total 36 keys encoded, ![Marantz RC-DA17CD IR remote control codes](IR-code_Marantz_RC-DA17CD.txt
+), few of them are encoded as RC5X, and two more special keys are there, raw timing and manually decoding
 
 ```
 2 Raw (12): 900 -900 900 -850 900 -850 1800 -1750 1800 -850 900 DIGITAL 1
@@ -42,7 +43,8 @@ bit 3, toggle bit
 
 
 
-complete keys encoding ![download Marantz RC-DA17CD IR remote control codes](IR-code.txt)  
+complete keys encoding ![download Marantz RC-DA17CD IR remote control codes](IR-code_Marantz_RC-DA17CD.txt
+)  
 ```
 	IR remote decoder RC5/X	 xiaolaba 2018-JUN-19					
 seq	Protocol	RAW_CODE	T	ADDRESS	COMMAND	bits	key
