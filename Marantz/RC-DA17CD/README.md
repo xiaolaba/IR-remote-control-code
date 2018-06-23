@@ -35,7 +35,7 @@ decoded stream is something like this
              
 ```
 
-this is possible 8 bit schema but RC5 timing or encoding
-in case the first two bit is consiered S1, S2, start bits of RC5
-bit 3, toogle bit
+this is possible 8 bit schema but RC5 timing or encoding  
+in case the first two bit is consiered S1, S2, start bits of RC5  
+bit 3, toggle bit  
 
