@@ -84,3 +84,6 @@ seq	Protocol	RAW_CODE	T	ADDRESS	COMMAND	bits	key
 36	RC5	0x52B 	1 	14 	2B 	12_bits 		HIGHLIGHT S
 
 ```
+
+
+![IR-remote-control-Marantz RC-DA17CD](neo_xiaolaba_IR-remote-control-Marantz RC-DA17CD.jpg)
