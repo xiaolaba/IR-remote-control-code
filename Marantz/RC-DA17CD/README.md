@@ -1,5 +1,6 @@
 
-IR remote of Hi-END CD player, ![Marantz CD Player CD-17mkiii](https://xiaolaba.files.wordpress.com/2018/04/xiaolaba_audiolab_8000s_remote.jpg)
+IR remote of Hi-END CD player, Marantz CD Player CD-17mkiii  
+![Marantz CD Player CD-17mkiii](https://xiaolaba.files.wordpress.com/2018/04/xiaolaba_audiolab_8000s_remote.jpg)
 
 Total 36 keys encoded, ![Marantz RC-DA17CD IR remote control codes](IR-code.txt), few of them are encoded as RC5X, and two more special keys are there, raw timing and manually decoding
 
