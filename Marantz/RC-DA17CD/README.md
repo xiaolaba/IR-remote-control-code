@@ -42,7 +42,7 @@ bit 3, toggle bit
 
 
 
-complete keys encoding
+complete keys encoding ![download Marantz RC-DA17CD IR remote control codes](IR-code.txt)  
 ```
 	IR remote decoder RC5/X	 xiaolaba 2018-JUN-19					
 seq	Protocol	RAW_CODE	T	ADDRESS	COMMAND	bits	key
