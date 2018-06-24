@@ -8,7 +8,7 @@
 IR remote decoder NEC
 xiaolaba 2016-JUN-02
 
-OTT, android TV box
+OTT, OEM android TV box
 UNLOCK TECH, UBOX Generation.2, 4K
 
 SEQ,PROTOCOL,RAW,ADDRESS,ADDRESS,COMMAND,BITS
