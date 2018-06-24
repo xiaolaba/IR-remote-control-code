@@ -1,6 +1,10 @@
 
 
 
+
+
+
+```
 IR remote decoder NEC
 xiaolaba 2016-JUN-02
 
@@ -40,3 +44,6 @@ SEQ,PROTOCOL,RAW,ADDRESS,ADDRESS,COMMAND,BITS
 29,NEC2,0x2FF2AD5,0x40,0xFF,84,171,32_bits,                        <-
 30,NEC2,0x2FF00FF,0x40,0xFF,0,255,32_bits,                         0
 31,NEC2,0x2FF48B7,0x40,0xFF,18,237,32_bits,                        <X
+
+
+```
