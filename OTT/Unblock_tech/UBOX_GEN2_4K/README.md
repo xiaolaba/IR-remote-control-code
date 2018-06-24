@@ -1,5 +1,8 @@
 
-![OTT, OEM android TV box, UNLOCK TECH, UBOX Generation.2, 4K](UBOX_GEN2.JPG)
+![OTT, OEM android TV box, UNLOCK TECH, UBOX Generation.2, 4K](UBOX_GEN2.JPG)  
+
+
+![OTT_Unlock_UBOX_GEN2_4K.txt](OTT_Unlock_UBOX_GEN2_4K.txt)  
 
 
 
