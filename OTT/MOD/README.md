@@ -14,3 +14,5 @@ IR steram = 01111101_01111101_11011110_00100001
 0x7D, 0x7D, 0xDE, 0x21
 MSB send first  
 ![MOD_CH_UP_decode.JPG](MOD_CH_UP_decode.JPG)
+  
+  
