@@ -8,11 +8,12 @@ bit 0 = 1T brust, 1T off
 bit 1 = 1T brust, 3T off  
 Stop  = 1T brust + off 110ms - 70.6ms  
 
-example CH+
+example, CH+
 IR steram = 01111101_01111101_11011110_00100001  
 01111101011111011101111000100001  
 0x7D, 0x7D, 0xDE, 0x21  
-MSB send first  
+MSB send first
+test result, timing +6% longer than designed, MOD receiver is still working flawlessly, distance 3 meters.    
 ![MOD_CH_UP_decoded.JPG](MOD_CH_UP_decoded.JPG)
   
   
