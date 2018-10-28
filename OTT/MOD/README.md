@@ -15,6 +15,10 @@ IR steram = 01111101_01111101_11011110_00100001
 0x7D, 0x7D, 0xDE, 0x21  
 MSB send first
 test result, timing +6% longer than designed, MOD receiver is still working flawlessly, distance 3 meters.    
-![MOD_CH_UP_decoded.JPG](MOD_CH_UP_decoded.JPG)
+![MOD_CH_UP_decoded.JPG](MOD_CH_UP_decoded.JPG)  
+
+.
+outline
+![MOD_MRC42.JPG](MOD_MRC42.JPG)
   
   
