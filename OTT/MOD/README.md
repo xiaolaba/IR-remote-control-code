@@ -18,7 +18,9 @@ test result, timing +6% longer than designed, MOD receiver is still working flaw
 ![MOD_CH_UP_decoded.JPG](MOD_CH_UP_decoded.JPG)  
 
 .
-outline
+outline  
 ![MOD_MRC42.JPG](MOD_MRC42.JPG)
+
+CH_UP 0x7d7dde21
   
   
