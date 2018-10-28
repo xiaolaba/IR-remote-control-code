@@ -1,4 +1,4 @@
-中華電信 MOD, IR REMOTRE CONTROL SIGNAL
+中華電信 MOD, IR REMOTRE CONTROL SIGNAL  
 MODEL : MRC42, http://mod.cht.com.tw/download/file/mrc42_userguide_www_20141111.pdf  
 
 NEC FORMAT, 38KHZ, 1/3 duty cycle, 7.75us ON time  
