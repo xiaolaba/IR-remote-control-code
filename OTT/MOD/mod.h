@@ -7,7 +7,7 @@
 // MOD IR remote signal, NEC, RAW code 0x7d7dxxxx, 
 // that is result of LSB first send first of a byte
 // ie. 0x7D = 0b0111,1101, send it MSB fisrt, but store LSB first,
-// it became  0b1011,1110 = 
+// it became  0b1011,1110 = 0xBE 
 
 #define MOD_NEC_ADDRESS 0xBEBE00
 #define MOD_CH_UP 0x7B
