@@ -1,4 +1,6 @@
 TATUNG 42" LCD TV  
+model:
+![tatung_dc-42k10 - 複製.jpg](tatung_dc-42k10 - 複製.jpg)
 
 unknow controller broad  
 
