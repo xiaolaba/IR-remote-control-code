@@ -1,4 +1,4 @@
-IR remote of Philips Fidelio wireless speaker and subwoofer
+IR remote of Philips Fidelio wireless speaker and sub-woofer
 
 ![Philips_Fidelio_IMAG7780.jpg](Philips_Fidelio_IMAG7780.jpg)  
 
