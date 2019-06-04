@@ -1,4 +1,4 @@
-/* xiaolaba
+/* xiaolaba,
  2018-JUN-04, test ok
  TV, IR remote for LeTV X50_air
  https://github.com/xiaolaba/IR-remote-control-code/tree/master/TV/LeTV/X50_air
