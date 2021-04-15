@@ -1,0 +1,177 @@
+body
+{
+ background: #262626;
+ position: absolute;
+ font-family: Verdana, Helvetica, Geneva, sans-serif;
+ width: 100%
+ height: 100%;
+ -webkit-user-select: none;
+}
+
+#source,
+#mute,
+#amb_on,
+#amb_mode,
+#teletext,
+#numbers,
+#standby
+{
+    margin: 15px;
+	width: 147px;
+	height: 131px;
+}
+
+#source
+{
+background: url(btns/source.png) no-repeat;
+-webkit-user-select: none;
+}
+
+#mute
+{
+background: url(btns/mute.png) no-repeat;
+-webkit-user-select: none;
+}
+
+#amb_on
+{
+background: url(btns/amb_on.png) no-repeat;
+-webkit-user-select: none;
+}
+
+#amb_mode
+{
+background: url(btns/amb_color.png) no-repeat;
+-webkit-user-select: none;
+}
+
+#teletext
+{
+background: url(btns/teletext.png) no-repeat;
+-webkit-user-select: none;
+}
+
+#numbers
+{
+background: url(btns/numbers.png) no-repeat;
+-webkit-user-select: none;
+}
+
+#standby
+{
+background: url(btns/standby.png) no-repeat;
+position: absolute;
+top: -10px;
+left: 440px;
+-webkit-user-select: none;
+}
+
+#nav
+{
+width: 368px;
+height: 262px;
+background: url(btns/nav.png) no-repeat;
+position: absolute;
+top: 145px;
+left: 230px;
+}
+
+#ok
+{
+width: 112px;
+height: 90px;
+background: url(btns/ok.png) no-repeat;
+position: absolute;
+left: 128px;
+top:86px;
+}
+
+#up
+{
+width: 368px;
+height: 60px;
+position:absolute;
+background: url(btns/up.png) no-repeat;
+background-position: 155px 18px;
+}
+
+#down
+{
+width: 368px;
+height: 60px;
+position:absolute;
+top: 200px;
+background: url(btns/down.png) no-repeat;
+background-position: 155px -43px;
+}
+
+#left
+{
+width: 110px;
+height: 140px;
+position:absolute;
+top: 60px;
+background: url(btns/left.png) no-repeat;
+background-position: 68px 40px;
+}
+
+#right
+{
+width: 110px;
+height: 140px;
+position:absolute;
+top: 60px;
+left: 257px;
+background: url(btns/right.png) no-repeat;
+background-position: -43px 40px;
+}
+
+#volume
+{
+width: 160px;
+height: 449px;
+position: absolute;
+top: 420px;
+left: 230px;
+}
+
+#prgrm
+{
+width: 160px;
+height: 449px;
+position: absolute;
+top: 420px;
+left: 430px;
+}
+
+#vol_up
+{
+height:224px;
+width: 160px;
+background: url(btns/volume_1.png) no-repeat;
+}
+
+#vol_down
+{
+position: absolute;
+bottom: 0px;
+height:225px;
+width: 160px;
+background: url(btns/volume_2.png) no-repeat;
+}
+
+#prgrm_up
+{
+height:224px;
+width: 160px;
+background: url(btns/program_1.png) no-repeat;
+}
+
+#prgrm_down
+{
+position: absolute;
+bottom: 0px;
+height:225px;
+width: 160px;
+background: url(btns/program_2.png) no-repeat;
+}

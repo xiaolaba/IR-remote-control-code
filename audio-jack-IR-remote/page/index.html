@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="de">
+<html manifest="cache-manifest">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<title>Philips RC6 Remote</title>
+	<link rel="stylesheet" href="design.css" media="screen">
+	<link rel="apple-touch-icon" href="touch.png">
+	<style type="text/css" media="screen">@import url("design.css");</style>
+	<meta name="viewport" content="width=640" />
+	<script type="text/javascript">
+	var btn;
+	function click(btn)
+	{
+	switch(btn)
+		{
+		case "up":
+			break;
+		case "right":
+			break;
+		case "down":
+			break;
+		case "left":
+			break;
+		case "ok":
+			document.getElementById(btn).style.backgroundPosition = "0px -90px";
+			break;
+		case "vol_up":
+			document.getElementById(btn).style.backgroundPosition = "-160px 0px";
+			break;
+		case "vol_down":
+			document.getElementById(btn).style.backgroundPosition = "-160px 0px";
+			break;
+		case "prgrm_up":
+			document.getElementById(btn).style.backgroundPosition = "-160px 0px";
+			break;
+		case "prgrm_down":
+			document.getElementById(btn).style.backgroundPosition = "-160px 0px";
+			break;
+		default:
+			document.getElementById(btn).style.backgroundPosition = "0px -131px";
+			break;
+		}
+	document.getElementById('snd_'+btn).play();
+	}
+	
+	function unclick(btn)
+	{
+	switch(btn)
+		{
+		case "up":
+			break;
+		case "right":
+			break;
+		case "down":
+			break;
+		case "left":
+			break;
+		default:
+			document.getElementById(btn).style.backgroundPosition = "0px 0px";
+			break;
+		}
+	}
+	</script>
+</head>
+<body>
+<audio id="snd_source" src="source.wav" preload="auto"></audio>
+<audio id="snd_mute" src="mute.wav" preload="auto"></audio>
+<audio id="snd_amb_on" src="amb_on.wav" preload="auto"></audio>
+<audio id="snd_amb_mode" src="amb_mode.wav" preload="auto"></audio>
+<audio id="snd_teletext" src="teletext.wav" preload="auto"></audio>
+<audio id="snd_up" src="up.wav" preload="auto"></audio>
+<audio id="snd_right" src="right.wav" preload="auto"></audio>
+<audio id="snd_down" src="down.wav" preload="auto"></audio>
+<audio id="snd_left" src="left.wav" preload="auto"></audio>
+<audio id="snd_ok" src="ok.wav" preload="auto"></audio>
+<audio id="snd_vol_up" src="vol_up.wav" preload="auto"></audio>
+<audio id="snd_vol_down" src="vol_down.wav" preload="auto"></audio>
+<audio id="snd_prgrm_up" src="prgrm_up.wav" preload="auto"></audio>
+<audio id="snd_prgrm_down" src="prgrm_down.wav" preload="auto"></audio>
+<audio id="snd_standby" src="standby.wav" preload="auto"></audio>
+
+<div id="source" ontouchstart="click('source')" ontouchend="unclick('source')"></div>
+<div id="mute" ontouchstart="click('mute')" ontouchend="unclick('mute')"></div>
+<div id="amb_on" ontouchstart="click('amb_on')" ontouchend="unclick('amb_on')"></div>
+<div id="amb_mode" ontouchstart="click('amb_mode')" ontouchend="unclick('amb_mode')"></div>
+<div id="teletext" ontouchstart="click('teletext')" ontouchend="unclick('teletext')"></div>
+<div id="numbers" ontouchstart="click('numbers')" ontouchend="unclick('numbers')"></div>
+<div id="standby" ontouchstart="click('standby')" ontouchend="unclick('standby')"></div>
+<div id="nav"><div id="up" ontouchstart="click('up')" ontouchend="unclick('up')"></div><div id="right" ontouchstart="click('right')" ontouchend="unclick('right')"></div><div id="down" ontouchstart="click('down')" ontouchend="unclick('down')"></div><div id="left" ontouchstart="click('left')" ontouchend="unclick('left')"></div><div id="ok" ontouchstart="click('ok')" ontouchend="unclick('ok')"></div></div>
+<div id="volume"><div id="vol_up" ontouchstart="click('vol_up')" ontouchend="unclick('vol_up')"></div><div id="vol_down" ontouchstart="click('vol_down')" ontouchend="unclick('vol_down')"></div></div>
+<div id="prgrm"><div id="prgrm_up" ontouchstart="click('prgrm_up')" ontouchend="unclick('prgrm_up')"></div><div id="prgrm_down" ontouchstart="click('prgrm_down')" ontouchend="unclick('prgrm_down')"></div></div>
+</body>
