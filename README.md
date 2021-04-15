@@ -16,7 +16,7 @@ NEC protocol and scratching from hard to a very simple timing diagram,
 https://xiaolaba.wordpress.com/2018/03/29/bose-lifestyle-5-music-system-%e6%94%b9%e8%a3%9d-ir-%e9%81%99%e6%8e%a7/
 
 project file upload
-[/audio-jack-IR-remote/generator/]
+[/audio-jack-IR-remote/generator/](/audio-jack-IR-remote/generator/) 
 
 
 ![/audio-jack-IR-remote/generator/modified_code.JPG](/audio-jack-IR-remote/generator/modified_code.JPG)
