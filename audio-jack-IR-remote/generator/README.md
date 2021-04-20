@@ -1,3 +1,14 @@
+# this genertor app is simple tool to build WAVE file upon user input.  
+for example, user input bit stream 10, actual IR drive single will be flikcing/off  
+the simplicty of IR remote control would be with this basis  
+flikcing = IR LED rapidly on and off with certain frequency  
+off = IR LED completely off, no emission IR light  
+time/duration in between flikcing/off, and more bit stream will form proper control signal.  
+
+
+
+
+### learning material  
 Phone jack output, how to get VPinverted phase and the VPP will be 2x
 
 P to max. 
@@ -16,7 +27,7 @@ L-R = 2 x VPP, no uses GND
 			
 ```
 
-
+### generated wav and intermedeate files for learning  
 this is output and plot, it can be seen with 2CH.csv, seeing inverted phase and the VPP will be 2x  
 ![how-to-get-VPP_max.JPG](how-to-get-VPP_max.JPG)  
 
