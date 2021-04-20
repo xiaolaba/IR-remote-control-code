@@ -13,6 +13,11 @@ REM g++ -o ir_wave_tool -lsndfile main.cpp   // this is only working with MacOS
 REM https://www.reddit.com/r/learnprogramming/comments/5qeu28/c_library_liblsndfile_on_ubuntu_linking_error/
 g++ main.cpp -o ir_wave_tool $(pkg-config sndfile --cflags --libs)
 
+under ubuntu of win10, modified main.cpp has to be chmod every time before it could be compiled.
+
+xiao@xiao5820:~/audio-jack-IR-remote/generator$ chmod +666 main.cpp
+xiao@xiao5820:~/audio-jack-IR-remote/generator$ g++ main.cpp -o ir_wave_tool $(pkg-config sndfile --cflags --libs)
+xiao@xiao5820:~/audio-jack-IR-remote/generator$ ./ir_wave_tool
 
 
 
@@ -28,7 +33,8 @@ g++ main.cpp -o ir_wave_tool $(pkg-config sndfile --cflags --libs)
 
 
 
-under minGW
+
+under minGW, not yet test done
 
 ref https://titanwolf.org/Network/Articles/Article?AID=44723909-e66c-4a08-868c-fe0b6dc7b0bf#gsc.tab=0
 git clone https://github.com/libsndfile/libsndfile
