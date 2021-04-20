@@ -12,9 +12,21 @@
 // origial https://github.com/najiji/audio-jack-tv-remote, no fork
 // modified for NEC2 procotol and exapaned bit stream; xiaolaba, 2018
 
+/*
+// under ubuntu of win10, modified main.cpp has to be chmod every time before it could be compiled.
+cd audio-jack-IR-remote
+cd generator
+chmod +666 main.cpp
+g++ main.cpp -o ir_wave_tool $(pkg-config sndfile --cflags --libs)
+./ir_wave_tool
+*/
+
+
 #include <iostream>
 #include <cmath>
 #include "sndfile.hh"
+
+#include <string.h> // for strcat
 
 int main (int argc, const char * argv[])
 {
@@ -54,9 +66,11 @@ int main (int argc, const char * argv[])
     std::cout << "Type in your IR command (1=high, 0=low) \n";
     char command[length];
     std::cin >> command;
-    std::cout << "Type in the command name (xxx.wav) \n";
+    std::cout << "Type in the command name (default .wav) \n";
     char outfilename[20];
     std::cin >> outfilename;
+	char wav[]=".wav";			// default .wav
+	strcat(outfilename, wav);	//
 	
     // Prepare sample buffer array
 #if defined RC6
@@ -67,8 +81,11 @@ int main (int argc, const char * argv[])
     std::cout << "Creating a wave file with a length of " << size << "\n";
     float sample[size];
 
+	std::cout << "open csv\n";
 	FILE *fp;
 	fp = fopen("carrier.csv","wb");	//open file
+	fprintf(fp, "sine_table\n");	//https://www.cplusplus.com/reference/cstdio/fprintf/  Use the shortest representation: %e or %f
+
     
 	// Put carrier frequency in array
     std::cout << "Storing carrier frequency\n";
@@ -81,8 +98,8 @@ int main (int argc, const char * argv[])
 		
 		// write to file, save carrier frequency table to be *.csv
 		//https://rosettacode.org/wiki/Write_float_arrays_to_a_text_file#C
-		fprintf(fp, "%.5g", sample[i]);		//https://www.cplusplus.com/reference/cstdio/fprintf/  Use the shortest representation: %e or %f
-		fprintf(fp,",");
+		fprintf(fp, "%.5g\n", sample[i]);		//https://www.cplusplus.com/reference/cstdio/fprintf/  Use the shortest representation: %e or %f
+		//fprintf(fp,",");
     }
     std::cout << "\n";	// output to screen
 	fprintf(fp, "\n");	// output to file
@@ -109,8 +126,8 @@ int main (int argc, const char * argv[])
 	
 
 
-
 	fp = fopen("2CH.csv","wb");	//open file
+	fprintf(fp, "CH_L,CH_R\n");	//https://www.cplusplus.com/reference/cstdio/fprintf/  Use the shortest representation: %e or %f
     
 	// Copy channel to second channels
 	// WAV file format, data only, not header, https://www.jianshu.com/p/947528f3dff8
@@ -123,16 +140,20 @@ int main (int argc, const char * argv[])
         }
         if (channels==2)
         {
-            chan_sample[i*2]=sample[i];	// 8 bit 2 channel, 
-            chan_sample[i*2+1]=sample[i];
 
+            chan_sample[i*2]=sample[i];			// CH1 channel,	
+            chan_sample[i*2+1]=sample[i] * -1; 	// inverted as CH2, thus phone jack output, L-R will get the greatest voltage, no GND used for IR
+				
 			//output to screen
 			std::cout << sample[i];
 			std::cout << " ";
-
-			fprintf(fp, "%.5g", sample[i]);		//https://www.cplusplus.com/reference/cstdio/fprintf/  Use the shortest representation: %e or %f
-			fprintf(fp, ",");
 			
+			// print two columns csv.
+			fprintf(fp, "%.5g", chan_sample[i*2]);	//https://www.cplusplus.com/reference/cstdio/fprintf/  Use the shortest representation: %e or %f
+			fprintf(fp, ",");
+			fprintf(fp, "%.5g", chan_sample[i*2+1]);//https://www.cplusplus.com/reference/cstdio/fprintf/  Use the shortest representation: %e or %f
+			fprintf(fp, "\n");	// output to file			
+
         }
     }
     std::cout << "\n";
