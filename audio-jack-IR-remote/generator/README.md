@@ -5,6 +5,8 @@ flikcing = IR LED rapidly on and off with certain frequency
 off = IR LED completely off, no emission IR light  
 time/duration in between flikcing/off, and more bit stream will form proper control signal.  
 
+![IR_flicking_off.JPG](IR_flicking_off.JPG)  
+
 
 
 
