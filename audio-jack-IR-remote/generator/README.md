@@ -43,6 +43,10 @@ electrical connection like this,
 
 
 
+### any better design of generator ?
+look at the wave file structure and compare with this tool and generated 1010.wav, it comply with WAVE file format and structure. It is possilbe to have more elegant soltuino to produce IR signal stream with T (flicking, wav date <>0 ) and off (0). T is a unit of IR brust signal, easy.
+![wav_file_structure.JPG](wav_file_structure.JPG)
+
 
 
 
