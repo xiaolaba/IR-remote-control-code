@@ -47,6 +47,22 @@ electrical connection like this,
 look at the wave file structure and compare with this tool and generated 1010.wav, it comply with WAVE file format and structure. It is possilbe to have more elegant soltuino to produce IR signal stream with T (flicking, wav date <>0 ) and off (0). T is a unit of IR brust signal, easy.
 ![wav_file_structure.JPG](wav_file_structure.JPG)
 
+neglect the first two parts of WAVE HEADER (RIFF & fmt), it is being fixed almost, there is pure data signal data stream, for example,
+```
+data lenght, 4bytes (this is why WAV no more than 4G size)  
+1st sample, 4 bytes ( ch0 16 bit signed & ch1 16 bit singed)  
+2nd sample, 4 bytes  
+3rd sample, 4 bytes  
+...  
+and so on  
+```
+
+there is a more easy than dumping array to file stream and no need use of "sndfile" libray, unless the design is gong to alter sampling rate on the fly.  
+
+NEC or any other IR procotol, T is defiend a one unit of IR brust (time for IR signal), and also off time.  
+For NEC procotol, T = 9/16 mS, considering sampling frequency 44.1KHz, and total samples would be,  
+T x 44.1 = 24.8 samples = 25  
+and 38KHZ IR signal / 2 = 19KHZ, would be modulated to be with 25 sampling points. both cycles used to drive one IR LED, resultant would be seeing IR signal in 38KHZ flicking  
 
 
 
