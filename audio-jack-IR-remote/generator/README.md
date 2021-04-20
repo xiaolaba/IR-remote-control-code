@@ -17,15 +17,15 @@ L-R = 2 x VPP, no uses GND
 ```
 
 
-this is output and plot, it can be seen with 2CH.csv, seeing inverted phase and the VPP will be 2x
-![how-to-get-VPP_max.JPG](how-to-get-VPP_max.JPG)
+this is output and plot, it can be seen with 2CH.csv, seeing inverted phase and the VPP will be 2x  
+![how-to-get-VPP_max.JPG](how-to-get-VPP_max.JPG)  
 
-this is output wave, uses Audicity to load the 1010.wav, see the same,
+this is output wave, uses Audicity to load the 1010.wav, see the same,  
 phone jack output will boost to double and drive IR LED  
-![how-to-get-VPP_max_wav.JPG](how-to-get-VPP_max_wav.JPG)
+![how-to-get-VPP_max_wav.JPG](how-to-get-VPP_max_wav.JPG)  
 
-electrical connection like this,
-![IR-circuit.JPG](IR-circuit.JPG)
+electrical connection like this,  
+![IR-circuit.JPG](IR-circuit.JPG)  
 
 
 
