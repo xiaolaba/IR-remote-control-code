@@ -66,3 +66,66 @@ and 38KHZ IR signal / 2 = 19KHZ, would be modulated to be with 25 sampling point
 
 
 
+### manual calcuation for the sampling and to visual the waveform  
+sampling frequency is 44100HZ  
+IR signal carrier frequency is 38000HZ (NEC protocol)  
+here is excel file, [44100modulated38000.xlsx](44100modulated38000.xlsx)  
+visual those reconstructed waveform, pretty much the same. sine function & instantaneous value is the sampling point, peak-peak is -1 & 1, floating point value, scaled to 16 bit signed integer would be -32768 to 32767 or in HEX (0x8000 to 0x7FFF). that is all. how many sample used for IR brust that was only how long the IR signal last for, or simplily T, the unit time of IR protocol used, for example NEC is 9/16 = 525us or 0.0000525 sec, RC6 is 1/36KHz * 16 = 444us, and so. This T is valid for IR signaling, and it is also for NO IR signaling. let us say Ton = Toff, when Ton, IR signaling and in contrast, Toff has no IR signal, intentionly putting Ton & Toff together to form a long enough sequency, it would be match to produce something useful, or saying named IR protocol and could be decoded to do something for IR control.
+
+this is basis and concept to bypass library of sndfile (sndfile is library used for produce WAV file), therefore we should be able to write the own WAV generator but no more relying on any library for the specific purpose.  
+here is example to build the software with predefiend WAVE file header, quit easy,  
+
+```
+/*
+	predefined wave file header, 16 bit, 2ch, 44100 sampling rate
+	xiaolaba, 2018
+*/
+
+// ref: https://gist.github.com/Jon-Schneider/8b7c53d27a7a13346a643dac9c19d34f
+
+// WAV header spec information:
+//https://web.archive.org/web/20140327141505/https://ccrma.stanford.edu/courses/422/projects/WaveFormat/
+//http://www.topherlee.com/software/pcm-tut-wavformat.html
+
+#define bytes_per_sample 2
+#define bits_per_sample 8 * bytes_per_sample
+
+
+//typedef struct wav_header {
+struct wav_header {
+
+
+    // RIFF Header
+    char	riff_header[4] = {'R', 'I', 'F', 'F'};	// Contains "RIFF", uses single quote, exclude \0
+    int		wav_size; 					// 32 bit, Size of the wav portion of the file, which follows the first 8 bytes. File size - 8
+	char 	wave_header[4] = {'W', 'A', 'V', 'E'}; 	// Contains "WAVE"
+    
+    // Format Header
+    char 	fmt_header[4] = {'f', 'm', 't', ' '}; 	// Contains "fmt " (includes trailing space)
+    int 	fmt_chunk_size = 16; 		// 32 bit image = 10000000;  Should be 16 for PCM
+    short 	audio_format = 1; 			// 16 bit, image = 0100; Should be 1 for PCM. 3 for IEEE Float
+    short 	num_channels = 2;			// 16 bit, image = 0200
+//    int 	sample_rate = 44100;		// 32bit, 0x0000ac44, image = 44ac0000
+    int 	sample_rate = 96000;		// 32bit
+
+    int 	byte_rate = sample_rate * num_channels * bytes_per_sample; 
+										// 32 bit, 176400 = 0x00 02 b1 10 image = 10 1b 02 00, 
+										// Number of bytes per second. sample_rate * num_channels * Bytes Per Sample
+
+    short 	sample_alignment = num_channels * bytes_per_sample ;
+										// 16 bit, image = 04 00
+										// num_channels * Bytes Per Sample
+
+    short 	bit_depth = bits_per_sample;
+										// 16 bit, image = 10 00; 
+										//Number of bits per sample
+    
+    // Data
+    char 	data_header[4] = {'d', 'a', 't', 'a'};	// Contains "data"
+    int 	data_bytes; 				// Number of bytes in data. Number of samples * num_channels * sample byte size
+    // uint8_t 	bytes[]; 				// Remainder of wave file is bytes
+	
+};
+// };wav_header;
+```
+![44100modulated38000.JPG](44100modulated38000.JPG)
