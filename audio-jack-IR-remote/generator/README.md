@@ -70,6 +70,9 @@ and 38KHZ IR signal / 2 = 19KHZ, would be modulated to be with 25 sampling point
 sampling frequency is 44100HZ  
 IR signal carrier frequency is 38000HZ (NEC protocol)  
 here is excel file, [44100modulated38000.xlsx](44100modulated38000.xlsx)  
+
+![44100modulated38000.JPG](44100modulated38000.JPG)
+
 visual those reconstructed waveform, pretty much the same. sine function & instantaneous value is the sampling point, peak-peak is -1 & 1, floating point value, scaled to 16 bit signed integer would be -32768 to 32767 or in HEX (0x8000 to 0x7FFF). that is all. how many sample used for IR brust that was only how long the IR signal last for, or simplily T, the unit time of IR protocol used, for example NEC is 9/16 = 525us or 0.0000525 sec, RC6 is 1/36KHz * 16 = 444us, and so. This T is valid for IR signaling, and it is also for NO IR signaling. let us say Ton = Toff, when Ton, IR signaling and in contrast, Toff has no IR signal, intentionly putting Ton & Toff together to form a long enough sequency, it would be match to produce something useful, or saying named IR protocol and could be decoded to do something for IR control.
 
 this is basis and concept to bypass library of sndfile (sndfile is library used for produce WAV file), therefore we should be able to write the own WAV generator but no more relying on any library for the specific purpose.  
@@ -128,4 +131,4 @@ struct wav_header {
 };
 // };wav_header;
 ```
-![44100modulated38000.JPG](44100modulated38000.JPG)
+
