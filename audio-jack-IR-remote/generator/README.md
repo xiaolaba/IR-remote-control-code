@@ -132,3 +132,6 @@ struct wav_header {
 // };wav_header;
 ```
 
+
+the output of sythzised waveform of 38KHZ signal. it can be loaded by Audicity correctly, and tweaking sampling rate to 96000 was also capable at any time.  
+![38000_carrier_freq.JPG](38000_carrier_freq.JPG)
