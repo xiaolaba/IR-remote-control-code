@@ -139,7 +139,7 @@ and visual like this,
 ![38000_carrier_freq.JPG](38000_carrier_freq.JPG)
 
 
-### basic knowledge and the modualtion to existing wave file
+### basic knowledge and the modulation to existing wav file
 look at the wave form of IR signal stream, +0.5 and -0.5 is very clear to see how to identify IR brust and IR off, and it would be trivial to direct modulate this wave file and ensure sound card output the carrier frequency when IR signal within green period, read the CH2 value and see whether less than -0.5, if it does, mapping the carrier frequency table and replace the CH2 value, easy..hurm  
 the wave file of this experiment, [myTVsuper_CH+.wav](myTVsuper_CH+.wav)  
 the image of waveform and decoded bit stream, and full table of remote control code [here](https://github.com/xiaolaba/IR-remote-control-code/tree/master/OTT/myTV_Super)   
