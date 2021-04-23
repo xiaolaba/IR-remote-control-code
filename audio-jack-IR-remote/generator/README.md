@@ -144,3 +144,10 @@ look at the wave form of IR signal stream, +0.5 and -0.5 is very clear to see ho
 the wave file of this experiment, [myTVsuper_CH+.wav](myTVsuper_CH+.wav)  
 the image of waveform and decoded bit stream, and full table of remote control code [here](https://github.com/xiaolaba/IR-remote-control-code/tree/master/OTT/myTV_Super)   
 ![myTVsuper_CH+.wav.jpg](myTVsuper_CH+.wav.jpg)
+
+### Normalised wave file, channel data, L/R only have 3 value either +max, 0 or -max, or 32767, 0, -32768, in hex 0x7FFF, 0x0000, 0x8000  
+this waveform view, filtered but modualtion yet. 
+![myTVsuper_CH+.wav_filtered.jpg](myTVsuper_CH+.wav_filtered.jpg)
+
+this is binary fiel & view
+![WAVE_L_R_data_view_direct.JPG](WAVE_L_R_data_view_direct.JPG)
