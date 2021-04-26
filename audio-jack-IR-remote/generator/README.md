@@ -157,7 +157,7 @@ this is simple formula used, the Vi (instantaneous value for the wav file and L-
 ```
 	//sampleBrust[i]=sin( float(i)/size * M_PI * cfreq * (float(size)/float(sampleRate)) );
 ```
-but why was that? and whether too much for us ? let's draw the own conclusion and to see a more simplified form, which is given no more than the original formula but less computational steps or complexity, but anyway, still not yet to a why. looking back to #manual calcuation for the sampling and to visual the waveform, it was the why
+but why was that? and whether too much for us ? let's draw the own conclusion and to see a more simplified form, which is given no more than the original formula but less computational steps or complexity, but anyway, still not yet to a why. looking back to [### manual calcuation for the sampling and to visual the waveform, it was the why](### manual calcuation for the sampling and to visual the waveform)
 ```
 	sampleBrust[i]=sin( i * M_PI * rectified_frquency / sampleRate ); // M_PI, it is PI() of C++
 ```
