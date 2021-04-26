@@ -145,7 +145,7 @@ the wave file of this experiment, [myTVsuper_CH+.wav](myTVsuper_CH+.wav)
 the image of waveform and decoded bit stream, and full table of remote control code [here](https://github.com/xiaolaba/IR-remote-control-code/tree/master/OTT/myTV_Super)   
 ![myTVsuper_CH+.wav.jpg](myTVsuper_CH+.wav.jpg)
 
-### Normalised wave file, channel data, L/R only have 3 values either +max, 0 or -max, or 32767, 0, -32768, in hex 0x7FFF, 0x0000, 0x8000  
+### Normalised wave file, channel data, L/R only have 3 values either +max, 0 or -max (32767,0,-32768, or in in hex 0x7FFF, 0x0000, 0x8000)  
 this waveform view, filtered but no modualtion yet. 
 ![myTVsuper_CH+.wav_filtered.jpg](myTVsuper_CH+.wav_filtered.jpg)
 
@@ -161,3 +161,7 @@ but why was that? and whether too much for us ? let's draw the own conclusion an
 ```
 	sampleBrust[i]=sin( i * M_PI * rectified_frquency / sampleRate ); // M_PI, it is PI() of C++
 ```
+the software design and hardware matched together, the sketch and notes following will tells everything behind the scene to formula derived & used, the solution is answer why 19KHZ sine wave would be programmable and playable with the PC sound card & phone jack output. Upon a pair of back-to-back IR diodes for IR signaling stream, there will be 19KHz x 2 = 38KHz IR beam & brusting.  
+
+### Final words  
+knowledge of wav file / 38KHz IR signal generator / IR remote control protocol, all those are ready. It is time and trivial task for produce arbitrary wav file for any IR signal stream easy. Recap the IR singaling for remote control, nothing more than those sequencies of on / off.
