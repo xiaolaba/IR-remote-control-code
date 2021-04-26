@@ -151,3 +151,13 @@ this waveform view, filtered but no modualtion yet.
 
 this is binary file & view  
 ![WAVE_L_R_data_view_direct.JPG](WAVE_L_R_data_view_direct.JPG)
+
+### The formula of mapping Carrier frequency to wav with certain sampling frequency (i.e. 44.1KHz)  
+this is simple formula used, the Vi (instantaneous value for the wav file and L-R instantence). here is why and how to derives this from the basic. The original author was given following,  
+```
+	//sampleBrust[i]=sin( float(i)/size * M_PI * cfreq * (float(size)/float(sampleRate)) );
+```
+but why was that? and whether too much for us ? let's draw the own conclusion and to see a more simplified form, which is given no more than the original formula but less computational steps or complexity, but anyway, still not yet to a why. looking back to ###manual calcuation for the sampling and to visual the waveform, it was the why
+```
+	sampleBrust[i]=sin( i * M_PI * rectified_frquency / sampleRate ); // M_PI, it is PI() of C++
+```
