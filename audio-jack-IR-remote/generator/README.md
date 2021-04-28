@@ -169,3 +169,7 @@ these are files of wav, from original to filtered and the final one with 19KHz c
 [myTVsuper_CH+_modulated.wav, play this file with IR diode connected to phone jack, try the remote function](myTVsuper_CH+_modulated.wav)  
 visual the tramsformation,
 ![myTVsuper_CH+_modulated.JPG](myTVsuper_CH+_modulated.JPG)  
+
+the one who case see there is more easy to visual and decode NEC2 IR signal stream, longer space was header, middle space is "1" and shortest space is "0"  
+anyone shall has no difficulty to map and decode this following IR signal,  
+![NEC_easy_IR_signal.jpg](NEC_easy_IR_signal.jpg)  
