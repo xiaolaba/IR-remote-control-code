@@ -15,8 +15,8 @@ IR RAW code and procotol is available, IR remote control (NEC2 procotol) of myTV
 NEC protocol and scratching from hard to a very simple timing diagram,
 https://xiaolaba.wordpress.com/2018/03/29/bose-lifestyle-5-music-system-%e6%94%b9%e8%a3%9d-ir-%e9%81%99%e6%8e%a7/
 
-project file upload
-demo for IR remote control via phone jack. https://github.com/xiaolaba/IR-remote-control-code/tree/master/audio-jack-IR-remote/generator#readme
+### project file upload  
+demo for IR remote control via phone jack. https://github.com/xiaolaba/IR-remote-control-code/tree/master/audio-jack-IR-remote/generator#readme  
 [/audio-jack-IR-remote/generator/](/audio-jack-IR-remote/generator/) 
 
 
