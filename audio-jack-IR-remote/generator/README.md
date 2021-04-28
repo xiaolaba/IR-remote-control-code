@@ -11,11 +11,9 @@ time/duration in between flikcing/off, and more bit stream will form proper cont
 
 
 ### learning material  
-Phone jack output, how to get VPinverted phase and the VPP will be 2x
-
-P to max. 
-L-GND, R-GND = 1x VPP  
-L-R = 2 x VPP, no uses GND
+Phone jack output, how to get inverted phase and boost power to be 2x VPP,
+L-GND or R-GND = 1x VPP, use any one channel output  
+L-R = 2 x VPP, no uses GND, 
 
 ```
 //the original code, two channels have same magnitude and phase
