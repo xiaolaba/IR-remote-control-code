@@ -159,7 +159,9 @@ but why was that? and whether too much for us ? let's draw the own conclusion an
 ```
 	sampleBrust[i]=sin( i * M_PI * rectified_frquency / sampleRate ); // M_PI, it is PI() of C++
 ```
-the software design and hardware matched together, the sketch and notes following will tells everything behind the scene to formula derived & used, the solution is answer why 19KHZ sine wave would be programmable and playable with the PC sound card & phone jack output. Upon a pair of back-to-back IR diodes for IR signaling stream, there will be 19KHz x 2 = 38KHz IR beam & brusting.  
+the software design and hardware matched together, the sketch and notes following will tells everything behind the scene to formula derived & used,  
+![phonejack_IR_remote_control_theory.jpg](phonejack_IR_remote_control_theory.jpg)  
+the solution is answer why 19KHZ sine wave would be programmable and playable with the PC sound card & phone jack output. Upon a pair of back-to-back IR diodes for IR signaling stream, there will be 19KHz x 2 = 38KHz IR beam & brusting.  
 
 ### Final words  
 knowledge of wav file / 38KHz IR signal generator / IR remote control protocol, all those are ready. It is time and trivial task for producing arbitrary wav file for any IR signal stream easy. Recap the IR singaling for remote control, nothing more than those sequencies of on / off.  
