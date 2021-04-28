@@ -164,8 +164,8 @@ but why was that? and whether too much for us ? let's draw the own conclusion an
 the software design and hardware matched together, the sketch and notes following will tells everything behind the scene to formula derived & used, the solution is answer why 19KHZ sine wave would be programmable and playable with the PC sound card & phone jack output. Upon a pair of back-to-back IR diodes for IR signaling stream, there will be 19KHz x 2 = 38KHz IR beam & brusting.  
 
 ### Final words  
-knowledge of wav file / 38KHz IR signal generator / IR remote control protocol, all those are ready. It is time and trivial task for producing arbitrary wav file for any IR signal stream easy. Recap the IR singaling for remote control, nothing more than those sequencies of on / off.
-these are files of wav, from original to filtered and the final one with 19KHz carrier frequency modulated.
+knowledge of wav file / 38KHz IR signal generator / IR remote control protocol, all those are ready. It is time and trivial task for producing arbitrary wav file for any IR signal stream easy. Recap the IR singaling for remote control, nothing more than those sequencies of on / off.  
+these are files of wav, from original to filtered and the final one with 19KHz carrier frequency modulated.  
 [myTVsuper_CH+.wav](myTVsuper_CH+.wav)  
 [myTVsuper_CH+_filtered.wav](myTVsuper_CH+_filtered.wav)  
 [myTVsuper_CH+_modulated.wav, play this file with IR diode connected to phone jack, try the remote function](myTVsuper_CH+_modulated.wav)  
