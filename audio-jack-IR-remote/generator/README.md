@@ -170,6 +170,5 @@ these are files of wav, from original to filtered and the final one with 19KHz c
 visual the tramsformation,
 ![myTVsuper_CH+_modulated.JPG](myTVsuper_CH+_modulated.JPG)  
 
-the one who case see there is more easy to visual and decode NEC2 IR signal stream, longer space was header, middle space is "1" and shortest space is "0"  
-anyone shall has no difficulty to map and decode this following IR signal,  
+the one who can see there is more easy to visual and decode NEC2 IR signal stream, longer space in between "blue bar" was HEADER, middle space is "1" and the shortest space is "0", last one lognest space is STOP.  Focus on the data stream of 1 & 0, easy for finding the sequency on the own, anyone shall has no difficulty to map and decode this following IR signal, so the next project perhaps read the 32bit data and direct synthsize the wav file, does not matter what IR control protocol or carrier frequency associated.
 ![NEC_easy_IR_signal.jpg](NEC_easy_IR_signal.jpg)  
