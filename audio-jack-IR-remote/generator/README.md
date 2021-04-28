@@ -165,3 +165,9 @@ the software design and hardware matched together, the sketch and notes followin
 
 ### Final words  
 knowledge of wav file / 38KHz IR signal generator / IR remote control protocol, all those are ready. It is time and trivial task for producing arbitrary wav file for any IR signal stream easy. Recap the IR singaling for remote control, nothing more than those sequencies of on / off.
+these are files of wav, from original to filtered and the final one with 19KHz carrier frequency modulated.
+[myTVsuper_CH+.wav](myTVsuper_CH+.wav)  
+[myTVsuper_CH+_filtered.wav](myTVsuper_CH+_filtered.wav)  
+[myTVsuper_CH+_modulated.wav, play this file with IR diode connected to phone jack, try the remote function](myTVsuper_CH+_modulated.wav)  
+visual the tramsformation,
+![myTVsuper_CH+_modulated.JPG](myTVsuper_CH+_modulated.JPG)  
