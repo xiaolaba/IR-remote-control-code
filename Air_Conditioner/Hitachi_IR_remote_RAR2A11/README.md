@@ -1,4 +1,9 @@
 
+# wave file for RAR2A11_Hitachi_aircon_IR_remote
+```
+drag the wav file to m.bat
+modulated_xx.wav will be produced  
+```   
 
 ![RAR2A11_Hitachi_aircon_IR_remote.JPG](RAR2A11_Hitachi_aircon_IR_remote.JPG) 
 
