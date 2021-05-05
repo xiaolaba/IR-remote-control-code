@@ -174,3 +174,11 @@ visual the tramsformation,
 
 the one who can see there is more easy to visual and decode NEC2 IR signal stream, longer space in between "blue bar" was HEADER, middle space is "1" and the shortest space is "0", last one lognest space is STOP.  Focus on the data stream of 1 & 0, easy for finding the sequency on the own, anyone shall has no difficulty to map and decode this following IR signal, so the next project perhaps read the 32bit data and direct synthsize the wav file, does not matter what IR control protocol or carrier frequency associated.
 ![NEC_easy_IR_signal.jpg](NEC_easy_IR_signal.jpg)  
+
+
+### demo  
+
+![IR_diode_back_toback_pair_remote_control_view.jpg](IR_diode_back_toback_pair_remote_control_view.jpg)  
+![android_file_sdcard3.JPG](android_file_sdcard3.JPG)  
+[xiaolaba.html](xiaolaba.html)
+
