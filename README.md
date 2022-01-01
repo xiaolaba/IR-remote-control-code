@@ -22,3 +22,20 @@ demo for IR remote control via phone jack. [readme](/audio-jack-IR-remote/genera
 
 ![/audio-jack-IR-remote/generator/modified_code.JPG](/audio-jack-IR-remote/generator/modified_code.JPG)
 
+
+
+### mir.exe release, 2022-JAN-01 update, how to uses  
+go to release page, https://github.com/xiaolaba/IR-remote-control-code/releases/tag/1.0  
+download 3 files,  
+```
+mir.exe
+my.html
+myTVsuper_CH+.wav
+```
+run mir.exe, 2 more wav will be produced as,  
+```
+myTVsuper_CH+_filtered.wav
+myTVsuper_CH+_modulated.wav
+```
+
+uses Audacity to load all 3 wave files together, will see the wave clean up and IR signal brusting  
