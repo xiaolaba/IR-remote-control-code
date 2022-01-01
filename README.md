@@ -39,3 +39,8 @@ myTVsuper_CH+_modulated.wav
 ```
 
 uses Audacity to load all 3 wave files together, will see the wave clean up and IR signal brusting  
+
+![compare_IR_wave.JPG](compare_IR_wave.JPG)  
+
+recap,
+mir.exe is used to clean up wav and produce NEC2 IR wav file only.
