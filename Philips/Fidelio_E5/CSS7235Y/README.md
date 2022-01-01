@@ -2,7 +2,11 @@ IR remote of Philips Fidelio wireless speaker and sub-woofer
 
 ![Philips_Fidelio_IMAG7780.jpg](Philips_Fidelio_IMAG7780.jpg)  
 
-  
+
+the code was lost header
+recap data format in this way, https://github.com/xiaolaba/IR-remote-control-code/discussions/2 
+
+
 ``` 
 AUDIO-in	6T+2T	1	0	0	0	4T	0	0	0	1	0	0	0	0	0	0	0	0	1	1	0	0	0b00010000	0b00001100
 audio-sync-	6T+2T	1	0	0	0	4T	0	0	0	1	0	0	0	0	0	0	0	0	1	1	0	1	0b00010000	0b00001101
