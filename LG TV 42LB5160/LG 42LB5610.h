@@ -1,8 +1,13 @@
+// xiaolaba, 2022-JAN-24/
+// used real remote control to log IR singal of VOL+
+// resultant is matching the following, see excel sheet for visual.
+
+// should be NEC / 38KHz IR signal stream
+// TV, LG 42LB5610-CD
 
 
-// https://gist.github.com/francis2110/8f69843dd57ae07dce80
-// 
 
+// copied from https://gist.github.com/francis2110/8f69843dd57ae07dce80
 
 key press	IR code raw stream HEX
 on/off	0x20DF10EF
