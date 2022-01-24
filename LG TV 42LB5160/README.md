@@ -71,3 +71,6 @@ mir tools to build desired wave file, https://github.com/xiaolaba/IR-remote-cont
 input file name must be myTVsuper_CH+.wav, no way to change.  
 output file name could be re-named as oyu want and edit the HTML file accordingly,  
 html and wave is here, [mir](mir)  
+visual the wave files,  
+![mir/wave.JPG](mir/wave.JPG)
+
