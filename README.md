@@ -2,6 +2,11 @@
 collection of IR-remote-control-code
 xiaolaba
 
+
+![IR_reader.jpg](IR_reader.jpg)
+
+
+
 osc = 0x50
 
 
