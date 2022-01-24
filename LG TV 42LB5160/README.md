@@ -64,3 +64,8 @@ forward	0x20DF718E
 ad	0x20DF8976
 
 ```
+
+
+### try to play wave file of VOL+ to control LG TV  
+tools to build wave file, https://github.com/xiaolaba/IR-remote-control-code/tree/master/audio-jack-IR-remote  
+html and wave, [mir](mir)
