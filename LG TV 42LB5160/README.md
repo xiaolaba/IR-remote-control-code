@@ -2,7 +2,7 @@
 
 ![LG_TV_VOL+.JPG](LG_TV_VOL+.JPG)  
 
-
+```
 // xiaolaba, 2022-JAN-24/
 // used real remote control to log IR singal of VOL+
 // resultant is matching the following, see excel sheet for visual.
@@ -63,3 +63,4 @@ rew	0x20DFF10E
 forward	0x20DF718E
 ad	0x20DF8976
 
+```
