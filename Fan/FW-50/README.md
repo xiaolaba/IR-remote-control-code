@@ -8,5 +8,5 @@
 
 ![xiaolaba_fan_coil_failure_imag6448.jpg](xiaolaba_fan_coil_failure_imag6448.jpg)
 
-馬達做工很差, 線圈被轉子磨斷, MCB 跳電
-塑膠殼用水口料非常多, 螺絲柱全部爆裂
+馬達做工很差, 線圈被轉子磨斷, 短路, MCB 跳電  
+塑膠殼用水口料非常多, 螺絲柱全部爆裂  
