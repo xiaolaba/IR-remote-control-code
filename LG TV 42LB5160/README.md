@@ -1,14 +1,23 @@
 
 ### remote control AKB74475480  
-RMB20 or HKD$200  
+RMB60 or HKD$200  
+
+### my remote decoded,
+![remote_code.jpg](remote_code.jpg)  
+
+### remote
 ![AKB73715603_REMOTE_CONTROL.jpg](AKB73715603_REMOTE_CONTROL.jpg)  
 ![AKB73715603_REMOTE_CONTROL_LG200.jpg](AKB73715603_REMOTE_CONTROL_LG200.jpg)  
 
 
+### c code header
+[LG_42LB5610_remote_AKB74475480.h](LG_42LB5610_remote_AKB74475480.h)
 
 
 
 
+
+### copy and reference,
 ![LG_TV_VOL+.JPG](LG_TV_VOL+.JPG)  
 
 ```
