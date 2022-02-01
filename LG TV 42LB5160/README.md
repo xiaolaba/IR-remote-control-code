@@ -10,6 +10,7 @@ fade out of silk-screen printing with some keys and map, cleaning and after plas
 
 
 ### my remote decoded,
+button#, form left to right, from upper to lower  
 ![remote_code.jpg](remote_code.jpg)  
 
 ### remote
