@@ -2,6 +2,13 @@
 ### remote control AKB74475480  
 RMB60 or HKD$200  
 
+### the remote used
+fade out of silk-screen printing with some keys and map, cleaning and after plastic bag covered  
+![remote_key_map.JPG](remote_key_map.JPG)    
+
+
+
+
 ### my remote decoded,
 ![remote_code.jpg](remote_code.jpg)  
 
