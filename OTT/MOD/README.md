@@ -1,6 +1,9 @@
 中華電信 MOD, IR REMOTRE CONTROL SIGNAL  
 MODEL : MRC42, http://mod.cht.com.tw/download/file/mrc42_userguide_www_20141111.pdf  
 
+MOD_IPTV.JPG
+![MOD_IPTV.JPG](MOD_IPTV.JPG)
+
 NEC FORMAT, 38KHZ, 1/3 duty cycle, 7.75us ON time  
 
 header = 9ms brust, 4.5ms off, 16T + 8T,
