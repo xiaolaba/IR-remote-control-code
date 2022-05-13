@@ -2,10 +2,22 @@ RCA protocol ?
 
 https://www.sbprojects.net/knowledge/ir/rca.php
 
+12bit protocol
+
+4bit address + 8bit command, completment 4bit  8bit
+
+1111 | 0011 0001 | 0000 | 1100 1110 | 0
+F    | 3    1    | 0    | C    E    | 00
+
+0xF310CE00
 
 
 
-bin
+
+
+
+
+bit seq
 1111 0011 0001 0000 1100 1110 0
 F    3    1    0    C    E    00
 0xF310CE00
