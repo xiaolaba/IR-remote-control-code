@@ -7,10 +7,10 @@ https://www.sbprojects.net/knowledge/ir/rca.php
 12bit protocol  
 
 4bit address + 8bit command, completment 4bit  8bit  
-
+```
 1111 | 0011 0001 | 0000 | 1100 1110 | 0  
 F    | 3    1    | 0    | C    E    | 00  
-
+```
 0xF310CE00  
 
 
@@ -36,13 +36,17 @@ button1
   
 
 bit seq  
+```
 1111 0011 0001 0000 1100 1110 0  
 F    3    1    0    C    E    00  
+```
 0xF310CE00  
 
 RAW LSB first  
+```
 1100 1111 0000 1000 0111 0011 0  
 C    F    0    8    7    3    00  
-0xCF 0x08 0x73 0x00  
+```
+xCF 0x08 0x73 0x00  
 RAW 0x007308CF  
 
