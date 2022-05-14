@@ -13,6 +13,15 @@ F    | 3    1    | 0    | C    E    | 00
 
 
 
+carrier frequency 38KHZ
+start, 4ms brust, 4ms silent
+logic 1, 0.5ms brust, 2ms silent
+logic 0, 0.5ms brust, 1ms silent
+24bit
+stop, 0.5ms brust, 8.75ms silent
+frame lenght 65.2ms
+
+
 
 
 
