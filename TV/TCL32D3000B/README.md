@@ -29,6 +29,11 @@ mute
 power_on  
 ![power_on.JPG](power_on.JPG)  
   
+
+
+   
+      
+       
 button1    
 ![button1.JPG](button1.JPG)  
 ![mute_waveform.JPG](mute_waveform.JPG) 
@@ -47,6 +52,6 @@ RAW LSB first
 1100 1111 0000 1000 0111 0011 0  
 C    F    0    8    7    3    00  
 ```
-xCF 0x08 0x73 0x00  
+0xCF 0x08 0x73 0x00  
 RAW 0x007308CF  
 
