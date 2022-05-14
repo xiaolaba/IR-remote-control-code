@@ -23,15 +23,17 @@ logic 0, 0.5ms brust, 1ms silent
 stop, 0.5ms brust, 8.75ms silent  
 frame lenght 65.2ms  
 
+mute  
 ![mute.JPG](mute.JPG)  
-
+  
+power_on  
 ![power_on.JPG](power_on.JPG)  
-
-
+  
+button1    
 ![button1.JPG](button1.JPG)  
 ![mute_waveform.JPG](mute_waveform.JPG) 
-
-
+  
+  
 
 bit seq  
 1111 0011 0001 0000 1100 1110 0  
