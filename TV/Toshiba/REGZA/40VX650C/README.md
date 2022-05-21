@@ -36,3 +36,6 @@ command 0x1a
 #define CODE_7        0x02FD0100 + (0b10010000 <<8 + ~0b10010000)  
 #define CODE_8        0x02FD0000 + (0b01010000 <<8 + ~0b01010000)  
 #define CODE_9        0x02FD0000 + (0b11010000 <<8 + ~0b11010000)  
+
+
+![TOSHIBA_REGZA_mute.JPG](TOSHIBA_REGZA_mute.JPG)  
