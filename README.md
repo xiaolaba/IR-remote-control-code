@@ -3,6 +3,9 @@ collection of IR-remote-control-code
 xiaolaba
 
 
+
+![EVAI_DZ8032-008_REMOTE_IR_decoder.JPG](EVAI_DZ8032-008_REMOTE_IR_decoder.JPG)  
+
 ![IR_reader.jpg](IR_reader.jpg)
 
 
