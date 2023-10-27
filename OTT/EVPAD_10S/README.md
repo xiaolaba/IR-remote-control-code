@@ -1,16 +1,18 @@
 NEC2 IR signal  
-VOL+  
+
+### VOL+  
 ![EVPAD_10S_VOL+.JPG](EVPAD_10S_VOL+.JPG)  
 
 ![EVAI_DZ8032-008_REMOTE_IR_decoder.JPG](EVAI_DZ8032-008_REMOTE_IR_decoder.JPG)  
 
 
-### complete IR code  
+### complete IR codes of full remote  
 EVAI_DZ8032-008_REMOTE  
 C header file,
 [EVAI_DZ8032-008_REMOTE_IR_decoder.h](EVAI_DZ8032-008_REMOTE_IR_decoder.h)  
 ![EVAI_DZ8032-008_REMOTE_IR_code.JPG](EVAI_DZ8032-008_REMOTE_IR_code.JPG)  
 
+IR code listing,   
 ```
 // xiaolaba, 2023/OCT/27
 // START E:\2019-11-11_H_trip\DIY\TV\IR_remote_decoder\IR_decoder\IR_decoder.ino build from Oct 27 2023
@@ -52,3 +54,11 @@ C header file,
 #define key_0032 0x00FFA25D // internet, Protocol=NEC Address=0x0 Command=0x45 Raw-Data=0xBA45FF00 32 bits LSB first
 
 ```
+
+### decoder used
+firmware & burn tool
+[burn328.bat](burn328.bat)  
+[IR_decoder.ino.standard.hex](IR_decoder.ino.standard.hex)  
+[IR_decoder.ino.with_bootloader.standard.hex](IR_decoder.ino.with_bootloader.standard.hex)  
+hardware, 
+UNO/mega328p 16MHZ, LCD shield, simple IR receiver  
