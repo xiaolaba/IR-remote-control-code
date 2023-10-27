@@ -62,3 +62,4 @@ firmware & burn tool
 [IR_decoder.ino.with_bootloader.standard.hex](IR_decoder.ino.with_bootloader.standard.hex)  
 hardware, 
 UNO/mega328p 16MHZ, LCD shield, simple IR receiver  
+![decoder_hardware.jpg](decoder_hardware.jpg)
