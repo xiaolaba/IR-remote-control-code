@@ -1,6 +1,6 @@
 REF:
-https://www.ostan.cz/IR_protocol_analyzer/
-https://www.sbprojects.net/knowledge/ir/rca.php
+https://www.ostan.cz/IR_protocol_analyzer/  
+https://www.sbprojects.net/knowledge/ir/rca.php  
 
 no fork, a sole copy and add new protocol following,
 
