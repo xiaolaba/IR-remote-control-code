@@ -5,7 +5,7 @@ https://www.sbprojects.net/knowledge/ir/rca.php
 ![IR_protocol_analyzer_v1.1/TCL_MUTE_sample/TCL_NUTE.JPG](IR_protocol_analyzer_v1.1/TCL_MUTE_sample/TCL_NUTE.JPG)  
 
 no fork, a sole copy and add new protocol following,
-
+[IR_protocol_analyzer_v1.1/TCL_MUTE_sample/protocols.xml](IR_protocol_analyzer_v1.1/TCL_MUTE_sample/protocols.xml)  
 ```
  <protocol name="TCL-RCA-12bit">
 <description url="https://www.sbprojects.net/knowledge/ir/rca.php">
