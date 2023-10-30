@@ -2,6 +2,8 @@ REF:
 https://www.ostan.cz/IR_protocol_analyzer/  
 https://www.sbprojects.net/knowledge/ir/rca.php  
 
+![/TCL_MUTE_sample/TCL_NUTE.JPG](/TCL_MUTE_sample/TCL_NUTE.JPG)
+
 no fork, a sole copy and add new protocol following,
 
 ```
