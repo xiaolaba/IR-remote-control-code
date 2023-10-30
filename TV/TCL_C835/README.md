@@ -110,3 +110,25 @@ RCA protocol
 
 
 ```
+
+
+### project files
+```
+b.bat
+mir.exe
+my.html
+RCA_protocol.xlsx
+REMOTE_RC802N_YAI4.h
+REMOTE_RC802N_YAI4.jpg
+REMOTE_RC902V_FMRH.h
+REMOTE_RC902V_FMRH.jpg
+TCL_MUTE_ANALYSIS.JPG
+TCL_MUTE_WAVE_L+.wav
+TCL_MUTE_WAVE_L+_filtered.wav
+TCL_MUTE_WAVE_L+_modulated.wav
+TCL_MUTE_WAVE_R+.wav
+TCL_MUTE_WAVE_R+_filtered.wav
+TCL_MUTE_WAVE_R+_modulated.wav
+TCL_REMOTE_RC902V_RC802V.JPG
+YEAR2022_C835.JPG
+```
