@@ -4,6 +4,7 @@ https://www.sbprojects.net/knowledge/ir/rca.php
 
 ### executable
 [IR_protocol_analyzer_v1.1](IR_protocol_analyzer_v1.1)  
+included the protocol.xml patched.  
 
 ### original author's source code
 [source_code](source_code/)  
