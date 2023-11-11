@@ -4,7 +4,8 @@ xiaolaba
 
 
 last update, [OTT/EVPAD_10S](OTT/EVPAD_10S), decoder firmware tool included    
-LCD display 32 bits shifting, fixed
+LCD display 32 bits shifting, fixed  
+bug fix key_0001 ~ key_9999  
 ![EVAI_DZ8032-008_REMOTE_IR_decoder.JPG](EVAI_DZ8032-008_REMOTE_IR_decoder.JPG)  
 
 ![IR_reader.jpg](IR_reader.jpg)
