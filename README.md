@@ -8,7 +8,7 @@ LCD display 32 bits shifting, fixed
 bug fix key_0001 ~ key_9999  
 ![OTT/EVPAD_10S/EVAI_DZ8032-008_REMOTE_IR_decoder.JPG](OTT/EVPAD_10S/EVAI_DZ8032-008_REMOTE_IR_decoder.JPG)  
 
-![IR_reader.jpg](IR_reader.jpg)
+![audio-jack-IR-remote/generator/IR_reader.jpg](audio-jack-IR-remote/generator/IR_reader.jpg)
 
 
 
@@ -50,7 +50,7 @@ myTVsuper_CH+_modulated.wav
 
 uses Audacity to load all 3 wave files together, will see the wave clean up and IR signal brusting  
 
-![compare_IR_wave.JPG](compare_IR_wave.JPG)  
+![audio-jack-IR-remote/generator/compare_IR_wave.JPG](audio-jack-IR-remote/generator/compare_IR_wave.JPG)  
 
 recap,
 mir.exe is used to clean up wav and produce NEC2 IR wav file only.
