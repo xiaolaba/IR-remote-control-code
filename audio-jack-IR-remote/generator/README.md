@@ -5,7 +5,7 @@ flikcing = IR LED rapidly on and off with certain frequency
 off = IR LED completely off, no emission IR light  
 time/duration in between flikcing/off, and more bit stream will form proper control signal.  
 
-![IR_flicking_off.JPG](IR_flicking_off.JPG)  
+![xiaolaba_study/IR_flicking_off.JPG](xiaolaba_study/IR_flicking_off.JPG)  
 
 
 
@@ -29,21 +29,21 @@ L-R = 2 x VPP, no uses GND,
 
 ### generated wav and intermedeate files for learning  
 this is output and plot, it can be seen with 2CH.csv, seeing inverted phase and the VPP will be 2x  
-![how-to-get-VPP_max.JPG](how-to-get-VPP_max.JPG)  
+![xiaolaba_study/how-to-get-VPP_max.JPG](xiaolaba_study/how-to-get-VPP_max.JPG)  
 
 this is output wave, uses Audicity to load the 1010.wav, see the same,  
 phone jack output will boost to double and drive IR LED  
-![how-to-get-VPP_max_wav.JPG](how-to-get-VPP_max_wav.JPG)  
+![xiaolaba_study/how-to-get-VPP_max_wav.JPG](xiaolaba_study/how-to-get-VPP_max_wav.JPG)  
 
 electrical connection like this,  
-![IR-circuit.JPG](IR-circuit.JPG)  
+![xiaolaba_study/IR-circuit.JPG](xiaolaba_study/IR-circuit.JPG)  
 
 
 
 
 ### any better design of generator ?
 look at the wave file structure and compare with this tool and generated 1010.wav, it comply with WAVE file format and structure. It is possilbe to have more elegant soltuino to produce IR signal stream with T (flicking, wav date <>0 ) and off (0). T is a unit of IR brust signal, easy.
-![wav_file_structure.JPG](wav_file_structure.JPG)
+![xiaolaba_study/wav_file_structure.JPG](xiaolaba_study/wav_file_structure.JPG)
 
 neglect the first two parts of WAVE HEADER (RIFF & fmt), it is being fixed almost, there is pure data signal data stream, for example,
 ```
@@ -67,9 +67,9 @@ and 38KHZ IR signal / 2 = 19KHZ, would be modulated to be with 25 sampling point
 ### manual calcuation for the sampling and to visual the waveform  
 sampling frequency is 44100HZ  
 IR signal carrier frequency is 38000HZ (NEC protocol)  
-here is excel file, [44100modulated38000.xlsx](44100modulated38000.xlsx)  
+here is excel file, [xiaolaba_study/44100modulated38000.xlsx](xiaolaba_study/44100modulated38000.xlsx)  
 
-![44100modulated38000.JPG](44100modulated38000.JPG)
+![xiaolaba_study/44100modulated38000.JPG](xiaolaba_study/44100modulated38000.JPG)
 
 visual those reconstructed waveform, pretty much the same. sine function & instantaneous value is the sampling point, peak-peak is -1 & 1, floating point value, scaled to 16 bit signed integer would be -32768 to 32767 or in HEX (0x8000 to 0x7FFF). that is all. how many sample used for IR brust that was only how long the IR signal last for, or simplily T, the unit time of IR protocol used, for example NEC is 9/16 = 525us or 0.0000525 sec, RC6 is 1/36KHz * 16 = 444us, and so. This T is valid for IR signaling, and it is also for NO IR signaling. let us say Ton = Toff, when Ton, IR signaling and in contrast, Toff has no IR signal, intentionly putting Ton & Toff together to form a long enough sequency, it would be match to produce something useful, or saying named IR protocol and could be decoded to do something for IR control.
 
@@ -132,23 +132,23 @@ struct wav_header {
 
 
 the output of sythzised waveform of 38KHZ signal. it can be loaded by Audicity correctly, and tweaking sampling rate to 96000 was also capable at any time.  
-the wav file generated in this way, [carrier.wav](carrier.wav)  
+the wav file generated in this way, [xiaolaba_study/carrier.wav](xiaolaba_study/carrier.wav)  
 and visual like this,  
-![38000_carrier_freq.JPG](38000_carrier_freq.JPG)
+![xiaolaba_study/38000_carrier_freq.JPG](xiaolaba_study/38000_carrier_freq.JPG)
 
 
 ### basic knowledge and the modulation to existing wav file
 look at the wave form of IR signal stream, +0.5 and -0.5 is very clear to see how to identify IR brust and IR off, and it would be trivial to direct modulate this wave file and ensure sound card output the carrier frequency when IR signal within green period, read the CH2 value and see whether less than -0.5, if it does, mapping the carrier frequency table and replace the CH2 value, easy..hurm  
-the wave file of this experiment, [myTVsuper_CH+.wav](myTVsuper_CH+.wav)  
-the image of waveform and decoded bit stream, and full table of remote control code [here](https://github.com/xiaolaba/IR-remote-control-code/tree/master/OTT/myTV_Super)   
-![myTVsuper_CH+.wav.jpg](myTVsuper_CH+.wav.jpg)
+the wave file of this experiment, [xiaolaba_study/myTVsuper_CH+.wav](xiaolaba_study/myTVsuper_CH+.wav)  
+the image of waveform and decoded bit stream, and full table of remote control code [here](https://github.com/xiaolaba/IR-remote-control-code/tree/master/IR_Code_collection/OTT/myTV_Super)   
+![xiaolaba_study/myTVsuper_CH+.wav.jpg](xiaolaba_study/myTVsuper_CH+.wav.jpg)
 
 ### Normalised wave file, channel data, L/R only have 3 values either +max, 0 or -max (32767,0,-32768, or in in hex 0x7FFF, 0x0000, 0x8000)  
 this waveform view, filtered but no modualtion yet. 
-![myTVsuper_CH+.wav_filtered.jpg](myTVsuper_CH+.wav_filtered.jpg)
+![xiaolaba_studymy/TVsuper_CH+.wav_filtered.jpg](xiaolaba_studymyTVsuper_CH+.wav_filtered.jpg)
 
 this is binary file & view  
-![WAVE_L_R_data_view_direct.JPG](WAVE_L_R_data_view_direct.JPG)
+![xiaolaba_study/WAVE_L_R_data_view_direct.JPG](xiaolaba_study/WAVE_L_R_data_view_direct.JPG)
 
 ### The formula of mapping Carrier frequency to wav with certain sampling frequency (i.e. 44.1KHz)  
 this is simple formula used, the Vi (instantaneous value for the wav file and L-R instantence). here is why and how to derives this from the basic. The original author was given following,  
@@ -160,25 +160,25 @@ but why was that? and whether too much for us ? let's draw the own conclusion an
 	sampleBrust[i]=sin( i * M_PI * rectified_frquency / sampleRate ); // M_PI, it is PI() of C++
 ```
 the software design and hardware matched together, the sketch and notes following will tells everything behind the scene to formula derived & used,  
-![phonejack_IR_remote_control_theory.jpg](phonejack_IR_remote_control_theory.jpg)  
+![xiaolaba_study/phonejack_IR_remote_control_theory.jpg](xiaolaba_study/phonejack_IR_remote_control_theory.jpg)  
 the solution is answer why 19KHZ sine wave would be programmable and playable with the PC sound card & phone jack output. Upon a pair of back-to-back IR diodes for IR signaling stream, there will be 19KHz x 2 = 38KHz IR beam & brusting.  
 
 ### Final words  
 knowledge of wav file / 38KHz IR signal generator / IR remote control protocol, all those are ready. It is time and trivial task for producing arbitrary wav file for any IR signal stream easy. Recap the IR singaling for remote control, nothing more than those sequencies of on / off.  
 these are files of wav, from original to filtered and the final one with 19KHz carrier frequency modulated.  
-[myTVsuper_CH+.wav](myTVsuper_CH+.wav)  
-[myTVsuper_CH+_filtered.wav](myTVsuper_CH+_filtered.wav)  
-[myTVsuper_CH+_modulated.wav, play this file with IR diode connected to phone jack, try the remote function](myTVsuper_CH+_modulated.wav)  
+[xiaolaba_study/myTVsuper_CH+.wav](xiaolaba_study/myTVsuper_CH+.wav)  
+[xiaolaba_study/myTVsuper_CH+_filtered.wav](xiaolaba_study/myTVsuper_CH+_filtered.wav)  
+[xiaolaba_study/myTVsuper_CH+_modulated.wav, play this file with IR diode connected to phone jack, try the remote function](xiaolaba_study/myTVsuper_CH+_modulated.wav)  
 visual the tramsformation,
-![myTVsuper_CH+_modulated.JPG](myTVsuper_CH+_modulated.JPG)  
+![xiaolaba_study/myTVsuper_CH+_modulated.JPG](xiaolaba_study/myTVsuper_CH+_modulated.JPG)  
 
 the one who can see there is more easy to visual and decode NEC2 IR signal stream, longer space in between "blue bar" was HEADER, middle space is "1" and the shortest space is "0", last one lognest space is STOP.  Focus on the data stream of 1 & 0, easy for finding the sequency on the own, anyone shall has no difficulty to map and decode this following IR signal, so the next project perhaps read the 32bit data and direct synthsize the wav file, does not matter what IR control protocol or carrier frequency associated.
-![NEC_easy_IR_signal.jpg](NEC_easy_IR_signal.jpg)  
+![xiaolaba_study/NEC_easy_IR_signal.jpg](xiaolaba_study/NEC_easy_IR_signal.jpg)  
 
 
 ### demo  
 
-![IR_diode_back_toback_pair_remote_control_view.jpg](IR_diode_back_toback_pair_remote_control_view.jpg)  
-![android_file_sdcard3.JPG](android_file_sdcard3.JPG)  
-[xiaolaba.html](xiaolaba.html)
+![xiaolaba_study/IR_diode_back_toback_pair_remote_control_view.jpg](xiaolaba_study/IR_diode_back_toback_pair_remote_control_view.jpg)  
+![xiaolaba_study/android_file_sdcard3.JPG](xiaolaba_study/android_file_sdcard3.JPG)  
+[xiaolaba_study/xiaolaba.html](xiaolaba_study/xiaolaba.html)
 

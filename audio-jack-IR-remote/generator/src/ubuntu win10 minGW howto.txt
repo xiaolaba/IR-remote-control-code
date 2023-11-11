@@ -1,0 +1,60 @@
+REM xiaolaba, 2018, under ubuntu
+
+REM install untuntu 20.04 on win10, update follow this link, https://github.com/xiaolaba/Openwrt_Ubuntu_20.04_setup
+
+sudo apt-get install pkg-config
+
+REM install libsndfile as following command line, 
+sudo apt-get install libsndfile-dev
+
+REM build this tool,
+REM g++ -o ir_wave_tool -lsndfile main.cpp   // this is only working with MacOS
+
+REM https://www.reddit.com/r/learnprogramming/comments/5qeu28/c_library_liblsndfile_on_ubuntu_linking_error/
+g++ main.cpp -o ir_wave_tool $(pkg-config sndfile --cflags --libs)
+
+under ubuntu of win10, modified main.cpp has to be chmod every time before it could be compiled.
+
+xiao@xiao5820:~/audio-jack-IR-remote/generator$ chmod +666 main.cpp
+xiao@xiao5820:~/audio-jack-IR-remote/generator$ g++ main.cpp -o ir_wave_tool $(pkg-config sndfile --cflags --libs)
+xiao@xiao5820:~/audio-jack-IR-remote/generator$ ./ir_wave_tool
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+under minGW, not yet test done
+
+ref https://titanwolf.org/Network/Articles/Article?AID=44723909-e66c-4a08-868c-fe0b6dc7b0bf#gsc.tab=0
+git clone https://github.com/libsndfile/libsndfile
+
+
+
+ref https://blog.csdn.net/liyuanbhu/article/details/10099131
+
+download http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
+decompress xvfvz autoconf-2.69.tar.gz
+cd autoconf-2.69
+./configure
+make
+make install
+
+
+
+download https://ftp.gnu.org/gnu/automake/automake-1.14.tar.xz
+decompress automake-1.14.tar.xz
+cd automake-1.14
+./configure
+make
+make install
