@@ -31,7 +31,7 @@ demo for IR remote control via phone jack. [readme](/audio-jack-IR-remote/genera
 [/audio-jack-IR-remote/generator/](/audio-jack-IR-remote/generator/) 
 
 
-![/audio-jack-IR-remote/generator/modified_code.JPG](/audio-jack-IR-remote/generator/modified_code.JPG)
+![/audio-jack-IR-remote/generator/xiaolaba_study/modified_code.JPG](/audio-jack-IR-remote/generator/xiaolaba_study/modified_code.JPG)
 
 
 
@@ -51,7 +51,7 @@ myTVsuper_CH+_modulated.wav
 
 uses Audacity to load all 3 wave files together, will see the wave clean up and IR signal brusting  
 
-![audio-jack-IR-remote/generator/compare_IR_wave.JPG](audio-jack-IR-remote/generator/compare_IR_wave.JPG)  
+![audio-jack-IR-remote/generator/xiaolaba_study/compare_IR_wave.JPG](audio-jack-IR-remote/generator/xiaolaba_study/compare_IR_wave.JPG)  
 
 recap,
 mir.exe is used to clean up wav and produce NEC2 IR wav file only.
