@@ -4,10 +4,10 @@ xiaolaba
 
 repo structure re-layout completely, uses GitHub Desktop    
 
-last update, [OTT/EVPAD_10S](OTT/EVPAD_10S), decoder firmware tool included    
+last update, [IR_Code_collection/OTT/EVPAD_10S](IR_Code_collection/OTT/EVPAD_10S), decoder firmware tool included    
 LCD display 32 bits shifting, fixed  
 bug fix key_0001 ~ key_9999  
-![OTT/EVPAD_10S/EVAI_DZ8032-008_REMOTE_IR_decoder.JPG](OTT/EVPAD_10S/EVAI_DZ8032-008_REMOTE_IR_decoder.JPG)  
+![IR_Code_collection/OTT/EVPAD_10S/EVAI_DZ8032-008_REMOTE_IR_decoder.JPG](IR_Code_collection/OTT/EVPAD_10S/EVAI_DZ8032-008_REMOTE_IR_decoder.JPG)  
 
 ![audio-jack-IR-remote/generator/IR_reader.jpg](audio-jack-IR-remote/generator/IR_reader.jpg)
 
