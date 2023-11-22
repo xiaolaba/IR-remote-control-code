@@ -2,7 +2,7 @@
 collection of IR-remote-control-code
 xiaolaba
 
-repo structure re-layout completely  
+repo structure re-layout completely, uses GitHub Desktop    
 
 last update, [OTT/EVPAD_10S](OTT/EVPAD_10S), decoder firmware tool included    
 LCD display 32 bits shifting, fixed  
