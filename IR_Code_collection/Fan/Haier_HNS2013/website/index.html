@@ -3,25 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>海爾遙控器</title>
+  <title>海爾暖風機遙控器</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="container">
-    <img src="haier.jpg" alt="Photo" id="photo">
-    <div id="buttons">
-      <button onclick="playAudio('1.wav')">Power</button>
-      <button onclick="playAudio('2.wav')">+</button>
-      <button onclick="playAudio('3.wav')">-</button>
-      <button onclick="playAudio('4.wav')">Swing</button>
-      <button onclick="playAudio('5.wav')">Rate</button>
-      <button onclick="playAudio('6.wav')">Timer</button>
+      <img src="haier.jpg" alt="Photo" id="photo">
+  <table id="buttons">
+    <tr>
+      <td><button onclick="playAudio('1.wav')">Button 1</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="playAudio('2.wav')">Button 2</button></td>
+      <td></td>	  
+      <td><button onclick="playAudio('3.wav')">Button 3</button></td>
+
+    </tr>
+    <tr>
+      <td><button onclick="playAudio('4.wav')">Button 4</button></td>	
+      <td><button onclick="playAudio('5.wav')">Button 5</button></td>
+      <td><button onclick="playAudio('6.wav')">Button 6</button></td>
+    </tr>
+	<tr>
+      <td></td>
+	  <td><button onclick="playAudio('hello.wav')">Hello海爾</button></td>
+	  <a id="info">海爾暖風機遙控器.</a>	  
+      <td></td>
+    </tr>
+	<tr>
+
+    </tr>
+  </table>
 	  
-      <button onclick="playAudio('hello.wav')">Hello</button>	  
-    </div>
+
+
+
   </div>
   <script src="script.js"></script>
-<div id="info">Please enter the desired width and height of the button in pixels.</div>
+
+
+
+
+
 
 
 </body>
