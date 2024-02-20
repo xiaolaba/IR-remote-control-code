@@ -1,0 +1,53 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#photo {
+  width: 20%;
+  height: auto;
+  position: relative; /* Ensure the photo is positioned relative to its container */
+}
+
+#buttons {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  transform: translate(0%, 0%);
+}
+
+button {
+  width: 60px; /* Set the width of the button */
+  height: 60px; /* Set the height of the button */
+  display: block;
+  margin-bottom: 10px;
+//
+//  width: 150px; /* Set the width of the button */
+//  height: 50px; /* Set the height of the button */
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+//  display: inline-block;
+  font-size: 20px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 30px;  
+  
+}
+
+#info {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
