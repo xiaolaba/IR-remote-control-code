@@ -1,14 +1,14 @@
 NEC2 IR signal  
 
-### VOL+  
+### 6 keys  
 ![Haier_HNS2013_REMOTE_IR_decoder_6keys_wav.JPG](Haier_HNS2013_REMOTE_IR_decoder_6keys_wav.JPG)  
 
-![EVAI_DZ8032-008_REMOTE_IR_decoder.JPG](EVAI_DZ8032-008_REMOTE_IR_decoder.JPG)  
+
 
 
 ### complete IR codes of full remote  
 Haier_HNS2013_REMOTE_IR_decoder_6keys
-C header file,
+C header file,  
 [Haier_HNS2013_REMOTE_IR_decoder_6keys.h](Haier_HNS2013_REMOTE_IR_decoder_6keys.h)  
 ![Haier_HNS2013_REMOTE_IR_decoder_6keys.JPG](Haier_HNS2013_REMOTE_IR_decoder_6keys.JPG)  
 
