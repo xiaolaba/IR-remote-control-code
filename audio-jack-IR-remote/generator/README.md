@@ -180,5 +180,9 @@ the one who can see there is more easy to visual and decode NEC2 IR signal strea
 
 ![IR_diode_back_toback_pair_remote_control_view.jpg](xiaolaba_study/IR_diode_back_toback_pair_remote_control_view.jpg)  
 ![android_file_sdcard3.JPG](xiaolaba_study/android_file_sdcard3.JPG)  
+
+
+![IR_wav.jpg](xiaolaba_study/IR_wav.jpg)  
+
 [xiaolaba.html](xiaolaba_study/xiaolaba.html)
 
